@@ -1,0 +1,36 @@
+{
+  "projects": [
+    {
+      "date": "22/01/2023",
+      "title": "Sarkara",
+      "description": "Sarkara, this app is build for our business, here you can also contact us and send your valuable message to us.",
+      "url": "https://sarkara-bac5b.web.app",
+      "github": "https://github.com/Aniket-Sarkar-40/Sarkara",
+      "imgSrc": "images/5.png"
+    },
+    {
+      "date": "22/01/2023",
+      "title": "Sarkara",
+      "description": "Sarkara, this app is build for our business, here you can also contact us and send your valuable message to us.",
+      "url": "https://sarkara-bac5b.web.app",
+      "github": "https://github.com/Aniket-Sarkar-40/Sarkara",
+      "imgSrc": "images/1.png"
+    },
+    {
+      "date": "26/01/2023",
+      "title": "CoinX",
+      "description": "this is a sample description about CoinX. In this app you can analyse coins and become crypto champion.",
+      "url": "https://coinx-e1b16.web.app/",
+      "github": "https://github.com/Aniket-Sarkar-40/CoinX",
+      "imgSrc": "images/coinx.png"
+    },
+    {
+      "date": "26/01/2023",
+      "title": "CoinX",
+      "description": "this is a sample description about CoinX. In this app you can analyse coins and become crypto champion.",
+      "url": "https://coinx-e1b16.web.app/",
+      "github": "https://github.com/Aniket-Sarkar-40/CoinX",
+      "imgSrc": "images/2.png"
+    }
+  ]
+}

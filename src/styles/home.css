@@ -1,0 +1,76 @@
+.btn-body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  border: none;
+}
+
+.btn-body:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
+}
+
+.btn-body:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+.btn-body .btn-body-cont {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 12px 18px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-body:hover .btn-body-cont {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.wave {
+  animation: wave 1s linear infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(-5deg);
+    transform-origin: bottom right;
+  }
+  50% {
+    transform: rotate(5deg);
+    transform-origin: bottom right;
+  }
+}
