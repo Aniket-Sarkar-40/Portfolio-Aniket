@@ -6,31 +6,31 @@
       "description": "Sarkara, this app is build for our business, here you can also contact us and send your valuable message to us.",
       "url": "https://sarkara-bac5b.web.app",
       "github": "https://github.com/Aniket-Sarkar-40/Sarkara",
-      "imgSrc": "images/5.png"
-    },
-    {
-      "date": "22/01/2023",
-      "title": "Sarkara",
-      "description": "Sarkara, this app is build for our business, here you can also contact us and send your valuable message to us.",
-      "url": "https://sarkara-bac5b.web.app",
-      "github": "https://github.com/Aniket-Sarkar-40/Sarkara",
       "imgSrc": "images/1.png"
     },
     {
       "date": "26/01/2023",
       "title": "CoinX",
-      "description": "this is a sample description about CoinX. In this app you can analyse coins and become crypto champion.",
-      "url": "https://coinx-e1b16.web.app/",
-      "github": "https://github.com/Aniket-Sarkar-40/CoinX",
-      "imgSrc": "images/coinx.png"
-    },
-    {
-      "date": "26/01/2023",
-      "title": "CoinX",
-      "description": "this is a sample description about CoinX. In this app you can analyse coins and become crypto champion.",
+      "description": "CoinX is a cryptocurrency exchange platform that allows users to analyse various digital currencies.",
       "url": "https://coinx-e1b16.web.app/",
       "github": "https://github.com/Aniket-Sarkar-40/CoinX",
       "imgSrc": "images/2.png"
+    },
+    {
+      "date": "05/03/2023",
+      "title": "Winner's Club",
+      "description": "Winner Club is a full-stack Edtech app with customer and admin levels for sign up, course customization, and analysis.",
+      "url": "https://winners-club.vercel.app/",
+      "github": "https://github.com/winners-club/winners-club-frontend",
+      "imgSrc": "images/3.png"
+    },
+    {
+      "date": "19/04/2023",
+      "title": "Portfolio",
+      "description": "Here is my portfolio website, showcases my skills and projects in web development and design.",
+      "url": "https://portfolio-aniket-sarkar.vercel.app/",
+      "github": "https://github.com/Aniket-Sarkar-40/Portfolio-Aniket",
+      "imgSrc": "images/4.png"
     }
   ]
 }

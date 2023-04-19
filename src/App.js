@@ -47,7 +47,7 @@ function App() {
         <Loader />
       ) : (
         <>
-          {ratio < 2 ? (
+          {ratio <= 2 || window.innerWidth > 1250 ? (
             <>
               <Navbar />
 
