@@ -18,7 +18,7 @@ const Projects = () => {
               showIndicators={true}
               showStatus={false}
               showThumbs={false}
-              interval={2000}
+              interval={3000}
               infiniteLoop={true}
               autoPlay={true}
             >

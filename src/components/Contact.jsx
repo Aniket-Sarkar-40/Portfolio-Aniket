@@ -42,6 +42,19 @@ const Contact = () => {
     e.preventDefault();
     setDisableBtn(true);
 
+    if (name === "" || email === "" || message === "") {
+      toast.error("Please fill all the fields!");
+      setDisableBtn(false);
+      return;
+    }
+
+    let regex = /^([_\-\.0-9a-zA-Z]+)@([_\-\.0-9a-zA-Z]+)\.([a-zA-Z]){2,7}$/;
+    if (!regex.test(email)) {
+      toast.error("Please Enter a valid email!");
+      setDisableBtn(false);
+      return;
+    }
+
     try {
       await addDoc(collection(db, "contacts"), { name, email, message });
       toast.success("Message has been sent successfully.");
