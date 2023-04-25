@@ -20,7 +20,7 @@ import {
 import "../styles/about.css";
 // import { Player, Controls } from "@lottiefiles/react-lottie-player";
 // import animationData from "../Assets/animation2.json";
-import home from "../Assets/transMyImg.png";
+import home from "../Assets/transMyImg2.png";
 
 const About = () => {
   return (
@@ -30,7 +30,7 @@ const About = () => {
           About
         </h2>
         <div className="info  flex flex-col-reverse md:flex-row-reverse md:justify-center md:h-[60vh] justify-around items-center forpic gap-4 md:gap-x-6">
-          <section className="left text-lg text-white font-semibold tracking-wide md:w-[60%] pl-8">
+          <section className="left text-lg text-white font-semibold tracking-wide md:w-[60%] md:pl-8">
             <h3 className="my-7 md:my-10 text-3xl text-center md:text-left font-semibold">
               Know Who <span className="text-[#be50f4]">I'M</span>
             </h3>

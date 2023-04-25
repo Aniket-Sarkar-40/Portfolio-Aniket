@@ -51,8 +51,8 @@ const Services = () => {
             whileInView={animations.whileInView}
             initial={animations.twoAndThree}
           >
-            <AiFillIeCircle className=" font-semibold text-5xl" />
-            <span className="font-semibold text-lg m-4 tracking-wider">
+            <AiFillIeCircle className=" font-semibold text-6xl h-[35%] lg:h-fit" />
+            <span className="font-semibold text-lg m-4 tracking-wider text-center h-[40%]  lg:h-fit">
               Full Stack Web Development
             </span>
           </motion.div>
@@ -64,8 +64,8 @@ const Services = () => {
               delay: 0.2,
             }}
           >
-            <SiAffinitydesigner className=" font-semibold text-5xl" />
-            <span className="font-semibold text-lg m-4 tracking-wider">
+            <SiAffinitydesigner className=" font-semibold text-5xl h-[35%] lg:h-fit" />
+            <span className="font-semibold text-lg m-4 tracking-wider text-center h-[40%] lg:h-fit ">
               Web Designing
             </span>
           </motion.div>
