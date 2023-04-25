@@ -52,7 +52,7 @@ function App() {
               <Navbar />
 
               <div className={`bg-[#0e031c]  p-5`}>
-                <Home ratio={ratio} />
+                <Home />
 
                 <About />
 

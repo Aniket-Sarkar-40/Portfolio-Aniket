@@ -9,7 +9,7 @@ import animationData from "../Assets/animation1.json";
 // const bgColour = `#181a27`;
 const color1 = `#be50f4`;
 
-const Home = ({ ratio }) => {
+const Home = () => {
   const clientCount = useRef(null);
   const projectCount = useRef(null);
 
@@ -101,12 +101,10 @@ const Home = ({ ratio }) => {
                 <article>
                   <p className="cta font-bold text-lg">
                     +
-                    {ratio < 2 && (
-                      <motion.span
-                        whileInView={animationClientCount}
-                        ref={clientCount}
-                      ></motion.span>
-                    )}
+                    <motion.span
+                      whileInView={animationClientCount}
+                      ref={clientCount}
+                    ></motion.span>
                   </p>
                   <span>Clients Worldwide</span>
                 </article>
@@ -114,12 +112,10 @@ const Home = ({ ratio }) => {
                 <article>
                   <p className="cta font-bold text-lg">
                     +
-                    {ratio < 2 && (
-                      <motion.span
-                        whileInView={animationProjectsCount}
-                        ref={projectCount}
-                      ></motion.span>
-                    )}
+                    <motion.span
+                      whileInView={animationProjectsCount}
+                      ref={projectCount}
+                    ></motion.span>
                   </p>
                   <span>Projects Made Worldwide</span>
                 </article>

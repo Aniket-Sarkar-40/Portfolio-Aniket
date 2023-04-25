@@ -11,3 +11,9 @@
     transform: scale(1);
   }
 }
+
+@keyframes ping {
+  50% {
+    opacity: 0.6;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../Assets/home.png";
+// import home from "../Assets/home.png";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
@@ -18,8 +18,9 @@ import {
   SiVercel,
 } from "react-icons/si";
 import "../styles/about.css";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import animationData from "../Assets/animation2.json";
+// import { Player, Controls } from "@lottiefiles/react-lottie-player";
+// import animationData from "../Assets/animation2.json";
+import home from "../Assets/transMyImg.png";
 
 const About = () => {
   return (
@@ -28,9 +29,9 @@ const About = () => {
         <h2 className="font-semibold  text-4xl text-white w-fit m-auto border-b-2 solid border-[#be50f4] p-2 mb-7">
           About
         </h2>
-        <div className="info flex flex-col lg:flex-row lg:justify-center lg:h-[60vh] justify-around items-center">
-          <section className="left text-lg text-white font-semibold">
-            <h3 className="mb-7 text-3xl text-center font-semibold">
+        <div className="info  flex flex-col-reverse md:flex-row-reverse md:justify-center md:h-[60vh] justify-around items-center forpic gap-4 md:gap-x-6">
+          <section className="left text-lg text-white font-semibold tracking-wide md:w-[60%] pl-8">
+            <h3 className="my-7 md:my-10 text-3xl text-center md:text-left font-semibold">
               Know Who <span className="text-[#be50f4]">I'M</span>
             </h3>
             <p>
@@ -49,11 +50,19 @@ const About = () => {
               <p>👉🏻 Travelling</p>
             </div>
           </section>
-          <section className="w-full lg:w-[40%] flex flex-col md:justify-center">
-            {/* <img className="object-contain" src={home} alt="Aniket" /> */}
-            <Player autoplay loop src={animationData}>
+          <section className="w-full md:w-[40%] flex flex-col md:justify-center forPic  items-center mb-4 md:m-0">
+            <img
+              className="object-contain bg-transparent md:w-[90%] lg:w-[70%] min-w-[8rem] max-w-[18rem] lg:max-w-[24rem] rounded-full w-[60%] shadow-lg 
+              shadow-[#be50f4] animate-ping"
+              src={home}
+              alt="Aniket"
+              style={{
+                animation: "ping 2s linear infinite",
+              }}
+            />
+            {/* <Player autoplay loop src={animationData}>
               <Controls buttons={["play", "repeat", "frame", "debug"]} />
-            </Player>
+            </Player> */}
           </section>
         </div>
         <div className="skillSet  my-9 text-3xl text-center font-semibold text-white">
