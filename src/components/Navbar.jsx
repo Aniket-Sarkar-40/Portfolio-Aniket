@@ -105,7 +105,7 @@ const MobileView = ({ hamb, hamclick }) => {
 
             <div className=" h-1/2 flex justify-center">
               <a
-                href="https://drive.google.com/file/d/1HhPB0OCQ6MWL5ntZkpO6mp6zXZU60Yet/view?usp=sharing"
+                href="https://drive.google.com/file/d/1i1ELqH85zmGAJUfk3VS8I-OXkx5B931S/view?usp=sharing"
                 download="Resume"
                 target="blank"
                 className="cursor-pointer"
