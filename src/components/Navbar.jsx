@@ -1,17 +1,33 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/nav.css";
 import { AiOutlineHome, AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { BiUser } from "react-icons/bi";
 import { FaTelegramPlane, FaBriefcase } from "react-icons/fa";
 import logo from "../Assets/A.png";
+import { db } from "../firebase";
+import { collection, getDocs } from "firebase/firestore";
 
 const bgColour = `#181a27`;
 const color1 = `#be50f4`;
-const resumeLink =
-  "https://drive.google.com/file/d/1i1ELqH85zmGAJUfk3VS8I-OXkx5B931S/view?usp=sharing";
+
+async function getResumeUrl() {
+  const settingsCol = collection(db, "settings");
+  const settingsSnapshot = await getDocs(settingsCol);
+  const settingsList = settingsSnapshot.docs.map((doc) => doc.data());
+
+  const resumeUrl = settingsList[0].resumeUrl;
+
+  return resumeUrl;
+}
 
 const Navbar = () => {
   const [hamb, setHamb] = useState(false);
+  const [resumeLink, setResumeLink] = useState("");
+
+  useEffect(() => {
+    const data = getResumeUrl();
+    data.then((val) => setResumeLink(val)).catch(() => console.log("error"));
+  }, []);
 
   const hamclick = () => {
     setHamb(!hamb);
@@ -27,13 +43,13 @@ const Navbar = () => {
 
   return (
     <>
-      <MobileView hamb={hamb} hamclick={hamclick} />
-      <PcView />
+      <MobileView hamb={hamb} hamclick={hamclick} resumeLink={resumeLink} />
+      <PcView resumeLink={resumeLink} />
     </>
   );
 };
 
-const MobileView = ({ hamb, hamclick }) => {
+const MobileView = ({ hamb, hamclick, resumeLink }) => {
   return (
     <>
       <header className="sticky top-0 z-20 lg:hidden">
@@ -124,7 +140,7 @@ const MobileView = ({ hamb, hamclick }) => {
   );
 };
 
-const PcView = () => {
+const PcView = ({ resumeLink }) => {
   return (
     <>
       <header className="sticky top-0 z-20 hidden lg:block">

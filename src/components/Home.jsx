@@ -82,7 +82,7 @@ const Home = () => {
             </div>
 
             <div className="flex gap-3 items-center flex-wrap text-white mr-3">
-              <a href="mailto:aniket10ce@gmail.com" className={``}>
+              <a href="mailto:aniket15970@gmail.com" className={``}>
                 <motion.button {...animation.button} className="btn-body">
                   <span className="btn-body-cont text-md">Hire Me</span>
                 </motion.button>
@@ -122,7 +122,7 @@ const Home = () => {
               </div>
               <article data-special>
                 <p className="cta font-bold text-lg">Contact</p>
-                <span>aniket10ce@gmail.com</span>
+                <span>aniket15970@gmail.com</span>
               </article>
             </div>
           </div>
