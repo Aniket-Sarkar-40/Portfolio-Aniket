@@ -7,6 +7,8 @@ import logo from "../Assets/A.png";
 
 const bgColour = `#181a27`;
 const color1 = `#be50f4`;
+const resumeLink =
+  "https://drive.google.com/file/d/1i1ELqH85zmGAJUfk3VS8I-OXkx5B931S/view?usp=sharing";
 
 const Navbar = () => {
   const [hamb, setHamb] = useState(false);
@@ -105,7 +107,7 @@ const MobileView = ({ hamb, hamclick }) => {
 
             <div className=" h-1/2 flex justify-center">
               <a
-                href="https://drive.google.com/file/d/1i1ELqH85zmGAJUfk3VS8I-OXkx5B931S/view?usp=sharing"
+                href={resumeLink}
                 download="Resume"
                 target="blank"
                 className="cursor-pointer"
@@ -183,11 +185,7 @@ const PcView = () => {
             </ul>
 
             <div className=" h-1/2">
-              <a
-                href="https://drive.google.com/file/d/1YOuNj7Wxw1JyQEky8EYgIylLn4Nu4ifY/view?pli=1"
-                download="Resume"
-                target="blank"
-              >
+              <a href={resumeLink} download="Resume" target="blank">
                 <button className="btn">My Resume</button>
               </a>
             </div>
